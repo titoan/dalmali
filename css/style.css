@@ -100,6 +100,13 @@ a:focus, a:hover {
 	position: relative;
 }
 
+.header-text{
+	font-size: 36px;
+	color:white;
+	font-weight: 600;
+	position: absolute;
+}
+
 	/*-- Navbar --*/
 
 	.navbar-default {
@@ -394,7 +401,7 @@ a:focus, a:hover {
 	/*-- Fading-Image --*/
 
 	.animated {
-		background-image: url("../images/heading.png");
+		/* background-image: url("../images/heading.png"); */
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-top: 20%;
@@ -830,6 +837,7 @@ h4.modal-title {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 }
+
 
 .wthreelocationsaits p.dummy-text:nth-child(2) {
 	-webkit-transition-delay: 0.1s;
@@ -2089,7 +2097,7 @@ li.agiletravelerw3ls p {
 /*-- Contact --*/
 
 .agilecontactw3ls {
-	background-image: url("../images/contact.jpg");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/contact.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -2113,6 +2121,23 @@ li.agiletravelerw3ls p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
 }
+
+input[type="text"]::-webkit-input-placeholder { color: #FFF; }
+input[type="text"]::-ms-input-placeholder { color: #FFF; }
+input[type="text"]::-ms-input-placeholder { color: #FFF; }
+input[type="text"]::placeholder { color: #FFF; }
+
+.agilecontactw3ls-grid input[type="email"]::-webkit-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid input[type="email"]::-ms-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid input[type="email"]::-ms-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid input[type="email"]::placeholder { color: #FFF; }
+
+.agilecontactw3ls-grid textarea::-webkit-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid textarea::-ms-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid textarea::-ms-input-placeholder { color: #FFF; }
+.agilecontactw3ls-grid textarea::placeholder { color: #FFF; }
+
+
 
 .agilecontactw3ls-grid input[type="email"], .agilecontactw3ls-grid textarea {
 	margin-bottom: 0;
@@ -2450,6 +2475,7 @@ address {
 	.wthreexperience {
 		width: 65%;
 		margin: 0 auto;
+		position: relative;
 	}
 	.wthreexperience .animated {
 		background-size: contain;
