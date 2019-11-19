@@ -9,7 +9,7 @@ grid3d = [...grid3d];
 //     })
 // })
 
-console.log(grid3d.length);
+// console.log(grid3d.length);
 for(let i= 0; i < grid3d.length; i++){
     grid3d[i].addEventListener('click', function(){        
         
