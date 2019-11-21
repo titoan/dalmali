@@ -1,22 +1,20 @@
-let grid3d = document.querySelectorAll('#grid3d .content .content-dummy');
-grid3d = [...grid3d];
-// grid3d.forEach(function(item){
-//     item.addEventListener('click', function(){
-//         this.classList.remove('show');
-//         let nextEl = this.nextElementSibling;
-//         nextEl.classList.add('show');
-//         console.log(nextEl);
-//     })
-// })
+let arrowRight = document.querySelectorAll('.arrow-right');
+arrowRight = [...arrowRight];
 
-// console.log(grid3d.length);
-for(let i= 0; i < grid3d.length; i++){
-    grid3d[i].addEventListener('click', function(){        
-        
-        if(i !== grid3d.length - 1){
-            this.classList.remove('show');
-            let nextEl = this.nextElementSibling;
-            nextEl.classList.add('show');
-        }
-    })
-}
+let slideArr = document.querySelectorAll('.grid3d > .content > .content-dummy');
+slideArr = [...slideArr];
+console.log(slideArr);
+arrowRight.forEach(function(item){
+item.addEventListener('click', function(){
+    const thisSliderElem = this.parentElement.parentElement;
+    
+    const nextElem = thisSliderElem.nextElementSibling;      
+       if(thisSliderElem.classList.value == thisSliderElem.classList.value){
+         
+        thisSliderElem.classList.remove('show');
+        nextElem.classList.add('show');
+        // console.log(typeof nextElem.classList.value);        
+       }
+
+    });
+})    

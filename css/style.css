@@ -751,6 +751,7 @@ h4.modal-title {
 	height: auto;
 	pointer-events: auto;
 	visibility: visible;
+	/* position: relative; */
 }
 
 .wthreelocationsaits .content > div {
@@ -3581,3 +3582,31 @@ address {
 
 
 /*-- //Responsive-Code --*/
+.arrow{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	/* background-color: #fff; */
+	
+}
+
+.arrow-container{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top:35%;
+}
+
+.arrow-right{
+	background-image: url(../images/right.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+
+.arrow-left{
+	background-image: url(../images/left.png);
+	background-repeat: no-repeat;
+	
+}
