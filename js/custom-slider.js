@@ -1,20 +1,22 @@
 let arrowRight = document.querySelectorAll('.arrow-right');
+let arrowLeft = document.querySelectorAll('.arrow-left');
 arrowRight = [...arrowRight];
+arrowLeft = [...arrowLeft];
 
-let slideArr = document.querySelectorAll('.grid3d > .content > .content-dummy');
-slideArr = [...slideArr];
-console.log(slideArr);
-arrowRight.forEach(function(item){
-item.addEventListener('click', function(){
-    const thisSliderElem = this.parentElement.parentElement;
-    
-    const nextElem = thisSliderElem.nextElementSibling;      
-       if(thisSliderElem.classList.value == thisSliderElem.classList.value){
-         
-        thisSliderElem.classList.remove('show');
-        nextElem.classList.add('show');
-        // console.log(typeof nextElem.classList.value);        
-       }
-
+arrowRight.forEach(function(item, index, arr){
+    item.addEventListener('click',function(){
+        if(index !== arr.length - 1){
+            item.parentElement.parentElement.classList.remove('show');
+            item.parentElement.parentElement.nextElementSibling.classList.add('show');
+        }
     });
-})    
+});
+
+arrowLeft.forEach(function(item, index, arr){
+    item.addEventListener('click', function(){
+       if(index !== 0){
+           item.parentElement.parentElement.classList.remove('show');
+           item.parentElement.parentElement.previousElementSibling.classList.add('show');
+       }
+    });
+});
