@@ -3633,3 +3633,8 @@ address {
 	border-radius: 5px;
 	margin: 0 auto;
 }
+
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+}
