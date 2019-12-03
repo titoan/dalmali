@@ -1596,7 +1596,7 @@ a.popup-with-zoom-anim:hover {
 	float: left;
 	overflow: hidden;
 	height: auto;
-	background: #000;
+	/* background: #000; */
 	text-align: center;
 }
 
@@ -1628,7 +1628,7 @@ a.popup-with-zoom-anim:hover {
 }
 
 figure.effect-apollo {
-	background: #000;
+	/* background: #000; */
 }
 
 figure.effect-apollo img {
@@ -3613,13 +3613,14 @@ address {
 	background-image: url(../images/right.png);
 	background-repeat: no-repeat;
 	background-position: right top;
+	z-index: 9999;
 }
 
 
 .arrow-left{
 	background-image: url(../images/left.png);
 	background-repeat: no-repeat;
-	
+	z-index: 9999;
 }
 
 .no-active{
@@ -3628,13 +3629,28 @@ address {
 
 .load-more-btn{
 	display: inline-block;
-	padding:10px 20px;
-	border: 1px solid blue;
-	border-radius: 5px;
-	margin: 0 auto;
+    padding: 10px 32px;
+    border: 1px solid #00b8ff;
+    border-radius: 19px;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .grid{
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 15px;
 }
+
+/* .wthreelocationsaits .grid figure:after{
+	position: absolute;
+	content: '';
+	background-color: rgba(0,0,0,.2);
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+} */
+
+
+
