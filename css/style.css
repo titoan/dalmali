@@ -9,7 +9,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
 
+@font-face {
+    font-family: Cyrvetica; /* Имя шрифта */
+    src: url(../fonts/CyrveticaExtraOutlineNormal.otf); /* Путь к файлу со шрифтом */
+   }
 
+   @font-face {
+    font-family: Michroma; /* Имя шрифта */
+    src: url(../fonts/Michroma.ttf); /* Путь к файлу со шрифтом */
+   }
 
 /*-- Reset-Code --*/
 
@@ -102,16 +110,36 @@ a:focus, a:hover {
 	position: relative;
 }
 
-.header-text{
-	font-family: 'Krona One', sans-serif;;
-	font-size: 120px;
-	color:white;
+/* .header-text{ */
+	/* font-family: 'Michroma', sans-serif; */
+	/* font-family: 'Krona One', sans-serif; */
+	/* font-size: 120px;
+	color:#7C2D14;
 	font-weight: 600;
 	position: absolute;
 	right: 0;
-    left: 0;
+    left: -68px;
 	top: 350px;
 	text-transform: uppercase;
+	letter-spacing: 37px;
+} */
+
+.header-text{ 
+	font-family: 'Michroma', sans-serif;
+	/* font-family: 'Cyrvetica', sans-serif; */
+	font-size: 120px;
+	color:#7C2D14;
+	font-weight: 600;
+	position: absolute;
+	right: 0;
+    left: -68px;
+	top: 350px;
+	text-transform: uppercase;
+	letter-spacing: 37px;
+}
+
+.header-text:hover{
+	color: #8B1709;
 }
 
 	/*-- Navbar --*/
@@ -453,7 +481,7 @@ a:focus, a:hover {
 	background: -o-linear-gradient(#6e72bb, #4A75C6);
 	background: -moz-linear-gradient(#6e72bb, #4A75C6); */
 	background: #8B1709;
-	padding: 100px 0;
+	padding: 45px 0 0 0; 
 }
 
 .w3lsaboutaits h2 {
@@ -482,7 +510,7 @@ a:focus, a:hover {
 }
 
 .w3lsaboutaits-grid-1 p {
-	font-size: 17px;
+	font-size: 19px;
 	font-weight: 300;
 	line-height: 30px;
 	color: #EEE;
@@ -498,7 +526,7 @@ a:focus, a:hover {
 }
 
 .w3lsaboutaits-grid-2 p {
-	font-size: 17px;
+	font-size: 19px;
 	font-weight: 300;
 	line-height: 30px;
 	color: #EEE;
@@ -633,7 +661,7 @@ h4.modal-title {
 .wthreelocationsaits h3, .agilepackagesw3l h3, .w3portfolioaits h3, .agilecontactw3ls h3 {
 	font-size: 40px;
 	margin-bottom: 50px;
-	color: #000;
+	color: #A53917;
 	font-family: 'Krona One', sans-serif;
 }
 
@@ -3630,10 +3658,15 @@ address {
 .load-more-btn{
 	display: inline-block;
     padding: 10px 32px;
-    border: 1px solid #00b8ff;
+    border: 1px solid #A53917;
     border-radius: 19px;
     margin: 0 auto;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	color: #A53917;
+}
+
+.load-more-btn:hover{
+	color:#8B1709;
 }
 
 .grid{
