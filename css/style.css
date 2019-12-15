@@ -448,7 +448,7 @@ a:focus, a:hover {
 		animation-fill-mode: both;
 	}
 
-	@-webkit-keyframes fadeIn {
+	/* @-webkit-keyframes fadeIn {
 		0% {color:rgba(255, 255, 255, 1);}
 		100% {color:rgba(255, 255, 255, 1);}
 	}
@@ -461,7 +461,7 @@ a:focus, a:hover {
 	.fadeIn {
 		-webkit-animation-name: fadeIn;
 		animation-name: fadeIn;
-	}
+	} */
 
 	.slider button {
 		display: none;
