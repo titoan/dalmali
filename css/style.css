@@ -764,7 +764,7 @@ h4.modal-title {
 .wthreelocationsaits .content {
 	overflow-y: scroll;
 	height: 0;
-	background: #000;
+	background: rgba(0,0,0,0.8);
 	visibility: hidden;
 	z-index: 400;
 	-webkit-overflow-scrolling: touch;
@@ -801,7 +801,7 @@ h4.modal-title {
 	overflow: hidden;
 	height: 0;
 	opacity: 0;
-	background: #000;
+	/* background: #000; */
 }
 
 .wthreelocationsaits .content > div.show {
