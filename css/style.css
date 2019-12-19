@@ -3686,4 +3686,14 @@ address {
 } */
 
 
+@media only screen and (min-width:1000px) and (max-width:1200px){
+	.header-text{
+		font-size: 85px;
+	}
+}
 
+@media only screen and (min-width:768px) and (max-width:1000px){
+	.header-text{
+		font-size: 63px;
+	}
+}
