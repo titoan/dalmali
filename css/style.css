@@ -124,7 +124,7 @@ a:focus, a:hover {
 	letter-spacing: 37px;
 } */
 
-.header-text{ 
+.header-text{
 	font-family: 'Michroma', sans-serif;
 	/* font-family: 'Cyrvetica', sans-serif; */
 	font-size: 120px;
@@ -227,7 +227,7 @@ a:focus, a:hover {
 	}
 
 	.navbar-default .navbar-nav>li>a:hover{
-		color: 
+		color:
 	}
 
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -481,7 +481,7 @@ a:focus, a:hover {
 	background: -o-linear-gradient(#6e72bb, #4A75C6);
 	background: -moz-linear-gradient(#6e72bb, #4A75C6); */
 	background: #8B1709;
-	padding: 45px 0 0 0; 
+	padding: 45px 0 0 0;
 }
 
 .w3lsaboutaits h2 {
@@ -3626,7 +3626,7 @@ address {
 	width: 100px;
 	height: 50px;
 	/* background-color: #fff; */
-	
+
 }
 
 .arrow-container{
@@ -3696,4 +3696,10 @@ address {
 	.header-text{
 		font-size: 63px;
 	}
+}
+
+.agilefooterwthree-grids{
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
